@@ -9,7 +9,7 @@ function solve (input){
  console.log(`{${x1}, ${y1}} to {${x2}, ${y2}} is ${checkValidity(isvalid(x1,y1,x2,y2))}`)
  
 
- function isValid(x1, y1,x2,y2){
+ function isValid(x1,y1,x2,y2){
     let value = Math.sqrt((x2 - x1) ** 2 + (y2-y1) ** 2);
     return Number.isInteger(value);
 }
